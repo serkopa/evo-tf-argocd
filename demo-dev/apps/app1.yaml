@@ -15,7 +15,7 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-      - values_dev.yaml
+      - values.yaml
       parameters:
       - name: "container.image"
         value: adv4000/app1:v3
