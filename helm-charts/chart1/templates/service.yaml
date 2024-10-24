@@ -5,8 +5,8 @@ metadata:
   labels:
     owner: DenisAstahov
 spec:
-  # selector:
-  #   project: {{ .Release.Name }}    # Selecting PODS with those Labels
+  selector:
+    project: {{ .Release.Name }}    # Selecting PODS with those Labels
   ports:
     - name      : {{ .Release.Name }}-listener
       protocol  : TCP
