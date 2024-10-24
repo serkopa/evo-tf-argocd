@@ -15,10 +15,10 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-      - values.yaml
+      - values_dev.yaml
       parameters:
       - name: "container.image"
-        value: adv4000/app1:v3
+        value: adv4000/app1:v2
 
   project: default
   syncPolicy:
